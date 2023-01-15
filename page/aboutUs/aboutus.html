@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <title>We Love Origami</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="./aboutus.css">
+</head>
+<body >
+    <!-- Top bar -->
+    <div class="top-bar">
+        <a class="top-bar-item" href="../../Index.html">
+            Home
+        </a>
+        <a class="top-bar-item" href="../../page/beginner/beginner.html">
+            Beginner
+        </a>
+        <a class="top-bar-item" href="../../page/instruction/instruction.html">
+            Instruction
+        </a>
+        <a class="top-bar-item" href="../../page/History/history.html">
+            History
+        </a>
+        <a class="top-bar-item" href="../../page/blogs/blogs.html">
+            Blog
+        </a>
+        <a class="top-bar-item" href="../../page/aboutUs/aboutus.html">
+            AboutUS
+        </a>
+        <div class="top-bar-mobile-content">We love origami</div>
+        <img id="top-bar-icon" src="../../Image/Home/bar-icon.png">
+    </div>
+    
+    <div id="top-bar-moblie">
+        <a class="top-bar-moblie-item" href="../../Index.html">
+            Home
+        </a>
+        <a class="top-bar-moblie-item" href="../../page/beginner/beginner.html">
+            Beginner
+        </a>
+        <a class="top-bar-moblie-item" href="../../page/instruction/instruction.html">
+            Instruction
+        </a>
+        <a class="top-bar-moblie-item"  href="../../page/History/history.html">
+            History
+        </a>
+        <a class="top-bar-moblie-item" href="../../page/blogs/blogs.html">
+            Blog
+        </a>
+        <a class="top-bar-moblie-item" href="../../page/aboutUs/aboutus.html">
+            AboutUS
+        </a>
+    </div>
+
+
+    <!-- banner -->
+    <div class="aBanner">
+        <div class="aBanner-item">
+            <img class="logo" alt="logo" src="../../Image/about us/logo.jpg">
+            <img class="logov" alt="logo" src="../../Image/about us/logov.png">
+            <div class="content">
+                <p class="title">Hello everyone!</p>
+                <p class="content-item">My name is Minh, i'm a web developer.i have been learning programming since 2021 and this is my first web project.
+                I am very happy that you have visited the website weloveorigami.com. Hope you have a lot of interesting time with origami paper folding. </p>
+                <div class="content-1">
+                    <p class="content-1-item">Contact with me </p>
+                    <a class="icon" href="https://www.facebook.com/minhmeomon/" target="_blank">
+                        <img class="icon" src="../../Image/about us/facebook.png">
+                    </a>
+                    <a class="icon" href="https://github.com/LeMinh2022" target="_blank">
+                        <img class="icon" src="../../Image/about us/github.png">
+                    </a>
+                    <input type="text" value="weloveorigami.com@gmail.com" id="myInput" style="display: none;">
+                    <div class="tooltip icon">
+                        <button class="button" onclick="myFunction()" onmouseout="outFunc()">
+                            <span class="tooltiptext" id="myTooltip">Click to copy Email</span>
+                            <img class="icon" src="../../Image/about us/email.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div class="afooter">
+        <div class="afooter-item">© 2022 WeLoveOrigami.com</div>  
+    </div>
+
+    <div id="backTopBtn">
+        <button class="backTopBtn-button">     
+            <img class="backTopBtn-image" src="../../Image/Home/backTopIcon.png">
+        </button>
+    </div>
+    <script src="../../index.js"></script>
+    <script>
+        function myFunction() {
+          var copyText = document.getElementById("myInput");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          navigator.clipboard.writeText(copyText.value);
+          
+          var tooltip = document.getElementById("myTooltip");
+          tooltip.innerHTML = "You got it!";
+        }
+        
+        function outFunc() {
+          var tooltip = document.getElementById("myTooltip");
+          tooltip.innerHTML = "Click to copy Email";
+        }
+    </script>
+</body>
+</html>

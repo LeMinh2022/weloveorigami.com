@@ -1,0 +1,91 @@
+.instruction-banner{
+    width: 100%;
+    background-image: url('../../Image/instruction/instruction-banner.png');
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.instruction-banner-item{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(246, 245, 247, 0.7);
+    width: 800px;
+}
+.instruction-banner-title{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 70px;
+    font-family:  'Barlow Condensed', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.instruction-banner-content{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-family:  'Barlow Condensed', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.instruction-banner-item-hr{
+    width: 400px;
+    border: #93c0fc 2px solid;
+}
+
+
+
+
+/* ------------------------------------------ */
+
+@media (max-width:1280px){
+    .firstb-content-mid{
+        flex-direction: row;
+        margin: auto;
+    }
+    .firstb-content-mid-item{
+        flex-direction: column;
+        margin: auto;
+    }
+    .firstb-content-mid-item-1{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:1000px){
+    .firstb-content-mid-item-r{
+        display: none;
+    }
+    .instruction-banner{
+        height: 400px;
+        width: 100%;
+    }
+    .instruction-banner-item{
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width:740px){
+    .firstb-content-mid{
+        flex-direction: column;
+        margin: auto;
+    }
+    .instruction-banner{
+        height: 400px;
+        width: 100%;
+    }
+
+    .instruction-banner-title {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:460px){
+    .first-content-top-title{
+        font-size: 45px;
+    }
+}

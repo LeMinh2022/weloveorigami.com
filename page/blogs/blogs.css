@@ -1,0 +1,137 @@
+.blog-banner{
+    width: 100%;
+    background-image: url('../../Image/blog/banner-blog.png');
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-banner-item{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(246, 245, 247, 0.7);
+    width: 1200px;
+}
+.blog-banner-title{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 70px;
+    font-family:  'Barlow Condensed', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.blog-banner-content{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-family:  'Barlow Condensed', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.blog-banner-item-hr{
+    width: 400px;
+    border: #93c0fc 2px solid;
+}
+
+/* done banner */
+
+
+/* blog content */
+
+.blog-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.blog-content-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+}
+
+
+
+.blog-content-item-1{
+    display: flex;
+    margin: auto;
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 10px;
+    width: 550px;
+    height: 540px;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.blog-content-item-1-image{
+    width: 510px;
+    height: 340px;
+    margin: auto;
+    margin-top: 20px;
+}
+.blog-content-item-1-title{
+    font-size: 40px;
+    margin: auto;
+    font-family:  'Barlow Condensed', sans-serif;
+    margin-top: 10px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+.blog-content-item-1-content{
+    font-size: 20px;
+    margin: auto;
+    width: 510px;
+    height: 340px;
+    text-indent: 20px;
+    font-family:  'Barlow Condensed', sans-serif;
+    margin-top: 10px;
+}
+
+.blog-content-item-1-title:hover{
+    color: #007bff;
+    cursor: pointer;
+}
+
+
+/* ------------------------------------ */
+
+@media (max-width:1220px ) {
+    .blog-content{
+        flex-direction: column;
+    }
+    .rp-display-none{
+        display: none;
+    }
+    .blog-banner-item{
+        width: 80%;
+    }
+    .blog-banner-title{
+        font-size: 80px;
+    }
+}
+
+@media (max-width:640px) {
+    .blog-content-item-1{
+        
+        width: 90%;
+    }
+    .blog-content-item-1-image{
+        width: 90%;
+        height: auto;
+    }
+    .blog-content-item-1-content{
+        width: 80%;
+    }
+}
+
+@media (max-width:500px) {
+    .blog-banner-title{
+        font-size: 50px;
+    }
+}
