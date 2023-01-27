@@ -118,7 +118,7 @@
 
 @media (max-width:640px) {
     .blog-content-item-1{
-        
+        height: auto;
         width: 90%;
     }
     .blog-content-item-1-image{
@@ -126,12 +126,45 @@
         height: auto;
     }
     .blog-content-item-1-content{
-        width: 80%;
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 }
 
 @media (max-width:500px) {
     .blog-banner-title{
         font-size: 50px;
+    }
+    .blog-content-item-1-title{
+        font-size: 30px;
+    }
+    .blog-content-item-1-content{
+       font-size: 20px;
+    }
+    .blog-content{
+        margin: auto;
+    }
+}
+
+@media (max-width:400px) {
+    .blog-content-item-1-content{
+       display: none;
+    }
+    .blog-content-item-1{
+        margin: auto;
+        margin-top: 20px;
+    }
+    .blog-content-item-1-title{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .blog-content-item{
+        margin: auto;
+    }
+    .blog-content-item-1-title{
+        font-size: 20px;
     }
 }

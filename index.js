@@ -45,7 +45,7 @@ function showMenu(){
         menuMobile.style.opacity= "1";
         menuMobile.style.transition= "visibility 0.3s , opacity 0.3s linear"; 
     } else{
-        menuMobile.style.visibility = "hidden";
+        menuMobile.style.visibility === "hidden";
         menuMobile.style.opacity= "0";
         menuMobile.style.transition= "visibility 0.3s , opacity 0.3s linear";
     }
