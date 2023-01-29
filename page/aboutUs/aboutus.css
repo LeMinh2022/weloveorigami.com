@@ -186,15 +186,15 @@
     .aBanner-item{
         flex-direction: column;
         height: 1000px;
-        margin: auto;
-        margin: 0px;
         padding: 0px;
+        margin: auto;
     }
     .aBanner{
         height: 1050px;
     }
     .content-1-item{
         font-size: 30px;
+        margin: auto;
     }
     .title{
         font-size: 50px;
@@ -214,12 +214,16 @@
         margin: auto;
         padding: 0px;
     }
+    .content-1{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
 }
 
 @media (max-width:900px) {
     .aBanner{
         width: 95%;
-        height: 1050px;
     }
     .aBanner-item{
         width: 80%;
@@ -249,6 +253,9 @@
 }
 
 @media (max-width:530px) {
+    .aBanner-item{
+        height: 950px;
+    }
     .content-1-item{
         display: none;
     }
@@ -263,5 +270,40 @@
         display: block;
         width: 90%;
         height: auto;
+    }
+    .title{
+        font-size: 35px;
+    }
+}
+
+@media (max-width:400px) {
+    .content-item{
+        font-size: 20px;
+    }
+    .aBanner-item{
+        height: 800px;
+    }
+}
+
+@media (max-width:330px) {
+    .aBanner-item{
+        height: 650px;
+    }
+    .icon{
+        height: 35px;
+    }
+    .content-1{
+        width: 60%;
+    }
+    .content-item{
+        font-size: 15px;
+    }
+}
+@media (max-width:250px) {
+    .aBanner-item{
+        height: 600px;
+    }
+    .icon{
+        height: 20px;
     }
 }

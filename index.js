@@ -39,13 +39,14 @@ window.onscroll = function(){
 // 2 show mobile menu button
 var menuButton = document.getElementById("top-bar-icon") 
 var menuMobile = document.getElementById("top-bar-moblie")
+
 function showMenu(){
     if(menuMobile.style.visibility === "hidden"){
         menuMobile.style.visibility = "visible";
         menuMobile.style.opacity= "1";
         menuMobile.style.transition= "visibility 0.3s , opacity 0.3s linear"; 
     } else{
-        menuMobile.style.visibility === "hidden";
+        menuMobile.style.visibility = "hidden";
         menuMobile.style.opacity= "0";
         menuMobile.style.transition= "visibility 0.3s , opacity 0.3s linear";
     }
