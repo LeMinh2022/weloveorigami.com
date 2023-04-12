@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to</title>
+    
+</head>
+<body>
+    <form>
+        <input type="type">
+        <button>send</button>
+    </form>
+  
+
+    
+   <script>
+        
+    let window2 = window.opener
+    
+    const submit = document.querySelector('button');
+    window.addEventListener('message', function(event){
+      const data = event.data;
+      const p = document.createElement("p");
+      p.textContent= data;
+      document.body.appendChild(p)
+    })
+
+    submit.addEventListener("click", function(event){
+      event.preventDefault();
+      let data = document.querySelector('input').value;
+      window2.postMessage(data,'*');
+    })
+</script>
+</body>
+</html>
