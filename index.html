@@ -234,6 +234,31 @@
         
         <div class="footer-item">© 2022 WeLoveOrigami.com</div>
         
+        
+        <form>
+        <input type="type">
+        <button>send</button>
+    </form>
+        
+        <script>
+        
+    let window2 = window.opener
+    
+    const submit = document.querySelector('button');
+    window.addEventListener('message', function(event){
+      const data = event.data;
+      const p = document.createElement("p");
+      p.textContent= data;
+      document.body.appendChild(p)
+    })
+
+    submit.addEventListener("click", function(event){
+      event.preventDefault();
+      let data = document.querySelector('input').value;
+      window2.postMessage(data,'*');
+    })
+</script>
+        
     </div>
 
     <div id="backTopBtn">
